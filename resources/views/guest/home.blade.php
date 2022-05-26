@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
+@section('title', 'Guest-Home')
+
 @section('head-css')
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-@endsection
 
 @section('content')
     <div class="container-fluid d-flex justify-content-center align-items-center my-container">
@@ -21,6 +21,7 @@
 @endsection
 
 
-@section('head-js')
-    <script src="{{ asset('js/front.js') }}" defer></script>
+@section('js')
+    <script src="{{ asset('js/front.js') }}"></script>
 @endsection
+

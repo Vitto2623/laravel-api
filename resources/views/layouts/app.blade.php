@@ -7,16 +7,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Laravel BoolPress</title>
+    <title>Laravel-API</title>
 
-    <!-- Scripts -->
-    @yield('head-js')
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    @yield('head-css')
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" @yield('head-css')>
 </head>
 <body>
     <div id="app">
@@ -77,7 +75,8 @@
         </main>
 
 
-
     </div>
+
+    @yield('js')
 </body>
 </html>
