@@ -10,14 +10,13 @@
     <title>Laravel BoolPress</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+    @yield('head-js')
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('head-css')
 </head>
 <body>
     <div id="app">
@@ -76,6 +75,9 @@
         <main class="py-4 mt-5">
             @yield('content')
         </main>
+
+
+
     </div>
 </body>
 </html>
